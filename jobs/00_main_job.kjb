@@ -13,7 +13,7 @@
   <parameters>
     <parameter>
       <name>RAWG_API_KEY</name>
-      <default_value>7cf54aaace1f4dd4ae7437b93a9e83c1</default_value>
+      <default_value/>
       <description/>
     </parameter>
   </parameters>

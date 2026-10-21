@@ -11,7 +11,7 @@
     <parameters>
       <parameter>
         <name>RAWG_API_KEY</name>
-        <default_value>7cf54aaace1f4dd4ae7437b93a9e83c1</default_value>
+        <default_value/>
         <description/>
       </parameter>
     </parameters>
@@ -774,6 +774,82 @@
     </GUI>
   </step>
   <step>
+    <name>Load RAWG Games</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>VideoGamesDB</connection>
+    <schema>dbo</schema>
+    <table>Staging_RawgGames</table>
+    <commit>1000</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+      <field>
+        <column_name>rawg_id</column_name>
+        <stream_name>rawg_id</stream_name>
+      </field>
+      <field>
+        <column_name>name</column_name>
+        <stream_name>name</stream_name>
+      </field>
+      <field>
+        <column_name>slug</column_name>
+        <stream_name>slug</stream_name>
+      </field>
+      <field>
+        <column_name>released</column_name>
+        <stream_name>released</stream_name>
+      </field>
+      <field>
+        <column_name>rating</column_name>
+        <stream_name>rating</stream_name>
+      </field>
+      <field>
+        <column_name>metacritic</column_name>
+        <stream_name>metacritic</stream_name>
+      </field>
+      <field>
+        <column_name>playtime</column_name>
+        <stream_name>playtime</stream_name>
+      </field>
+      <field>
+        <column_name>ratings_count</column_name>
+        <stream_name>ratings_count</stream_name>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>496</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
     <name>Normalize RAWG Fields</name>
     <type>SelectValues</type>
     <description/>
@@ -1041,82 +1117,6 @@
     <GUI>
       <xloc>368</xloc>
       <yloc>336</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Load RAWG Games</name>
-    <type>TableOutput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>VideoGamesDB</connection>
-    <schema>dbo</schema>
-    <table>Staging_RawgGames</table>
-    <commit>1000</commit>
-    <truncate>Y</truncate>
-    <ignore_errors>N</ignore_errors>
-    <use_batch>Y</use_batch>
-    <specify_fields>Y</specify_fields>
-    <partitioning_enabled>N</partitioning_enabled>
-    <partitioning_field/>
-    <partitioning_daily>N</partitioning_daily>
-    <partitioning_monthly>Y</partitioning_monthly>
-    <tablename_in_field>N</tablename_in_field>
-    <tablename_field/>
-    <tablename_in_table>Y</tablename_in_table>
-    <return_keys>N</return_keys>
-    <return_field/>
-    <fields>
-      <field>
-        <column_name>rawg_id</column_name>
-        <stream_name>rawg_id</stream_name>
-      </field>
-      <field>
-        <column_name>name</column_name>
-        <stream_name>name</stream_name>
-      </field>
-      <field>
-        <column_name>slug</column_name>
-        <stream_name>slug</stream_name>
-      </field>
-      <field>
-        <column_name>released</column_name>
-        <stream_name>released</stream_name>
-      </field>
-      <field>
-        <column_name>rating</column_name>
-        <stream_name>rating</stream_name>
-      </field>
-      <field>
-        <column_name>metacritic</column_name>
-        <stream_name>metacritic</stream_name>
-      </field>
-      <field>
-        <column_name>playtime</column_name>
-        <stream_name>playtime</stream_name>
-      </field>
-      <field>
-        <column_name>ratings_count</column_name>
-        <stream_name>ratings_count</stream_name>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>496</xloc>
-      <yloc>224</yloc>
       <draw>Y</draw>
     </GUI>
   </step>

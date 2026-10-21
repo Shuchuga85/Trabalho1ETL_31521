@@ -508,7 +508,7 @@
   </connection>
   <order>
     <hop>
-      <from>CSV file input</from>
+      <from>Read VGSales CSV</from>
       <to>Normalize Fields</to>
       <enabled>Y</enabled>
     </hop>
@@ -544,12 +544,12 @@
     </hop>
     <hop>
       <from>Calculate Sales Metrics</from>
-      <to>Table output</to>
+      <to>Load Sales</to>
       <enabled>Y</enabled>
     </hop>
   </order>
   <step>
-    <name>CSV file input</name>
+    <name>Read VGSales CSV</name>
     <type>CsvInput</type>
     <description/>
     <distribute>Y</distribute>
@@ -1518,7 +1518,7 @@
     </GUI>
   </step>
   <step>
-    <name>Table output</name>
+    <name>Load Sales</name>
     <type>TableOutput</type>
     <description/>
     <distribute>Y</distribute>
@@ -1601,7 +1601,7 @@
     </remotesteps>
     <GUI>
       <xloc>704</xloc>
-      <yloc>288</yloc>
+      <yloc>112</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
