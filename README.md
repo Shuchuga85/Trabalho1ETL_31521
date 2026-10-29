@@ -124,7 +124,7 @@ A associação entre as fontes usa principalmente o **nome normalizado** do vide
 
 ## Relatório e demonstração
 
-- **Relatório:** [`doc/31521_doc.pdf`](doc/31521_doc.pdf)
+- **Relatório:** [`docs/31521_doc.pdf`](docs/31521_doc.pdf)
 - **Vídeo:** https://vimeo.com/1238015643
 - **Código e ficheiros do trabalho:** https://github.com/Shuchuga85/Trabalho1ETL_31521
 
