@@ -13,7 +13,7 @@
   <parameters>
     <parameter>
       <name>RAWG_API_KEY</name>
-      <default_value>7f84be40a338499b9554a18eff72cd08</default_value>
+      <default_value/>
       <description/>
     </parameter>
   </parameters>
@@ -537,65 +537,6 @@ Pentaho Data Integration.</comment>
       <use_auth>Y</use_auth>
       <use_secure_auth>Y</use_secure_auth>
       <auth_user>entartes.noreply@gmail.com</auth_user>
-      <auth_password>Encrypted 2c4ecdfbe12ce9d8eba1db77fca88aaca</auth_password>
-      <only_comment>N</only_comment>
-      <use_HTML>N</use_HTML>
-      <use_Priority>N</use_Priority>
-      <encoding>UTF-8</encoding>
-      <priority>normal</priority>
-      <importance>normal</importance>
-      <sensitivity>normal</sensitivity>
-      <secureconnectiontype>TLS</secureconnectiontype>
-      <replyToAddresses/>
-      <filetypes>
-        <filetype>LOG</filetype>
-      </filetypes>
-      <embeddedimages>
-      </embeddedimages>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>64</xloc>
-      <yloc>336</yloc>
-      <attributes_kjc/>
-    </entry>
-    <entry>
-      <name>Send Success Email (2)</name>
-      <description/>
-      <type>MAIL</type>
-      <attributes/>
-      <server>smtp.gmail.com</server>
-      <port>587</port>
-      <destination>a31521@alunos.ipca.pt</destination>
-      <destinationCc/>
-      <destinationBCc/>
-      <replyto>entartes.noreply@gmail.com</replyto>
-      <replytoname>entartes.norepy</replytoname>
-      <subject>[ISI ETL] Processamento concluído com sucesso</subject>
-      <include_date>N</include_date>
-      <contact_person/>
-      <contact_phone/>
-      <comment>O processo ETL de integração e análise de videojogos
-foi concluído com sucesso.
-
-Foram executadas as seguintes etapas:
-
-1. Importação das vendas em CSV
-2. Recolha de dados da RAWG API
-3. Integração dos videojogos com os dados de vendas
-4. Geração de estatísticas em CSV
-
-Os dados foram carregados no SQL Server
-e os relatórios foram exportados.
-
-Este e-mail foi gerado automaticamente pelo
-Pentaho Data Integration.</comment>
-      <include_files>Y</include_files>
-      <zip_files>N</zip_files>
-      <zip_name/>
-      <use_auth>Y</use_auth>
-      <use_secure_auth>Y</use_secure_auth>
-      <auth_user>entartes.noreply@gmail.com</auth_user>
       <auth_password>Encrypted </auth_password>
       <only_comment>N</only_comment>
       <use_HTML>N</use_HTML>
@@ -613,7 +554,7 @@ Pentaho Data Integration.</comment>
       </embeddedimages>
       <parallel>N</parallel>
       <draw>Y</draw>
-      <nr>1</nr>
+      <nr>0</nr>
       <xloc>64</xloc>
       <yloc>336</yloc>
       <attributes_kjc/>
