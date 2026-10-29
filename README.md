@@ -16,32 +16,36 @@ O **Pentaho Data Integration** limpa e transforma os dados, relaciona títulos e
 
 ## Estrutura dos ficheiros
 
-A estrutura abaixo mantém `jobs`, `transformations` e `data` dentro da mesma pasta `dataintegration`, para preservar os caminhos relativos usados no projeto.
+A estrutura abaixo mantém `jobs`, `transformations`, `logs` e `data`, para preservar os caminhos relativos usados no projeto.
 
 ```text
 tp01-31521/
 ├── README.md
 ├── doc/
 │   └── 31521_doc.pdf
-└── dataintegration/
-    ├── jobs/
-    │   └── 00_main_job.kjb
-    ├── transformations/
-    │   ├── 01_import_sales.ktr
-    │   ├── 02_import_rawg_paginated.ktr
-    │   ├── 03_integrate_games.ktr
-    │   └── 04_generate_statistics.ktr
-    └── data/
-        ├── input/
-        │   └── vgsales.csv
-        ├── reference/
-        │   └── genre_mapping.xml
-        └── output/
-            ├── valid_sales.csv
-            ├── invalid_sales.csv
-            ├── genre_statistics.csv
-            ├── integration_statistics.csv
-            └── normalized_genre_statistics.csv
+├── jobs/
+│   └── 00_main_job.kjb
+├── transformations/
+│   ├── 01_import_sales.ktr
+│   ├── 02_import_rawg_paginated.ktr
+│   ├── 03_integrate_games.ktr
+│   └── 04_generate_statistics.ktr
+├── logs/
+│   ├── 01_import_sales.log
+│   ├── 02_import_rawg_paginated.log
+│   ├── 03_integrate_games.log
+│   └── 04_generate_statistics.log
+└── data/
+    ├── input/
+    │   └── vgsales.csv
+    ├── reference/
+    │   └── genre_mapping.xml
+    └── output/
+        ├── valid_sales.csv
+        ├── invalid_sales.csv
+        ├── genre_statistics.csv
+        ├── integration_statistics.csv
+        └── normalized_genre_statistics.csv
 ```
 
 > Os ficheiros da pasta `data/output` são gerados ao executar as transformações. Podem ser incluídos no ZIP como exemplos de resultados. O SQL Server é externo aos ficheiros `.ktr` e `.kjb`, pelo que **a base de dados/tabelas também têm de existir** no ambiente onde o projeto for executado.
@@ -90,6 +94,7 @@ No Spoon, confirme ou adapte a ligação de base de dados denominada **`VideoGam
 5. Confirme que o parâmetro **`RAWG_API_KEY`** é passado do Job para a transformação RAWG. Forneça o valor na janela de execução; não o guarde como valor por defeito nos ficheiros partilhados.
 6. Clique em **Run** para executar o Job. A sequência esperada é: **Sales → RAWG → Integração → Estatísticas**.
 7. Consulte os logs do Spoon. Se todas as etapas tiverem sucesso, verifique os dados no SQL Server e os ficheiros gerados na pasta `data/output`.
+8. Confirme que a palavra passe e utilizador do envio de emails estão preenchidos.
 
 **Nota sobre os caminhos:** os ficheiros originais utilizam caminhos relativos ao contexto de execução do Pentaho. A estrutura acima mantém `jobs`, `transformations` e `data` como pastas irmãs. Se mudar a estrutura, terá de ajustar os caminhos nos steps de entrada/saída e no Job. É recomendável testar o **Job completo a partir da pasta final de entrega**, antes de criar o ZIP.
 

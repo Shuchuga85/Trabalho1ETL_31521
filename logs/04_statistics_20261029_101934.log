@@ -1,0 +1,16 @@
+2026-10-29 10:19:34.401 - 04 - Generate Statistics - Using run configuration [Pentaho local]
+2026-10-29 10:19:34.401 - 04_generate_statistics - Dispatching started for transformation [04_generate_statistics]
+2026-10-29 10:19:34.424 - Read Genre Mapping XML.0 - Finished processing (I=12, O=0, R=0, W=12, U=0, E=0)
+2026-10-29 10:19:34.737 - Read Integrated Games.0 - Finished reading query, closing connection
+2026-10-29 10:19:34.791 - Read Sales for Statistics.0 - Finished reading query, closing connection
+2026-10-29 10:19:34.793 - Read Sales for Statistics.0 - Finished processing (I=16598, O=0, R=0, W=16598, U=0, E=0)
+2026-10-29 10:19:34.825 - Read Sales for XML Mapping.0 - Finished reading query, closing connection
+2026-10-29 10:19:34.829 - Read Sales for XML Mapping.0 - Finished processing (I=16598, O=0, R=0, W=16598, U=0, E=0)
+2026-10-29 10:19:34.834 - Lookup Genre Category.0 - Finished processing (I=0, O=0, R=16610, W=16598, U=0, E=0)
+2026-10-29 10:19:34.835 - Sort By Genre.0 - Finished processing (I=0, O=0, R=16598, W=16598, U=0, E=0)
+2026-10-29 10:19:34.849 - Calculate Genre Statistics.0 - Finished processing (I=0, O=0, R=16598, W=12, U=0, E=0)
+2026-10-29 10:19:34.866 - Rank Genres by Sales.0 - Finished processing (I=0, O=0, R=12, W=12, U=0, E=0)
+2026-10-29 10:19:34.875 - Export Genre Statistics.0 - Finished processing (I=0, O=13, R=12, W=12, U=0, E=0)
+2026-10-29 10:19:34.880 - Sort by Normalized Genre.0 - Finished processing (I=0, O=0, R=16598, W=16598, U=0, E=0)
+2026-10-29 10:19:34.888 - Calculate Normalized Genre Statistics.0 - Finished processing (I=0, O=0, R=16598, W=12, U=0, E=0)
+2026-10-29 10:19:34.903 - Export Normalized Genre Statistics.0 - Finished processing (I=0, O=13, R=12, W=12, U=0, E=0)

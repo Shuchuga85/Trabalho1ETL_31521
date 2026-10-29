@@ -1,0 +1,10 @@
+2026-10-29 10:19:32.380 - 02 - Import RAWG - Using run configuration [Pentaho local]
+2026-10-29 10:19:32.380 - 02_import_rawg_paginated - Dispatching started for transformation [02_import_rawg_paginated]
+2026-10-29 10:19:32.380 - Load RAWG Games.0 - Connected to database [VideoGamesDB] (commit=1000)
+2026-10-29 10:19:32.380 - Generate RAWG Pages.0 - Finished processing (I=0, O=0, R=0, W=5, U=0, E=0)
+2026-10-29 10:19:32.396 - Build RAWG Request URL.0 - Optimization level set to 9.
+2026-10-29 10:19:32.398 - Generate Page Numbers.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2026-10-29 10:19:32.427 - Get RAWG API Key.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2026-10-29 10:19:32.458 - Build RAWG Request URL.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2026-10-29 10:19:33.260 - Fetch RAWG Games.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2026-10-29 10:19:33.286 - Validate HTTP Response.0 - Finished processing (I=0, O=0, R=5, W=0, U=0, E=0)

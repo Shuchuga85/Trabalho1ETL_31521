@@ -1,0 +1,12 @@
+2026-10-29 10:10:52.075 - 01 - Import Sales - Using run configuration [Pentaho local]
+2026-10-29 10:10:52.075 - 01_import_sales - Dispatching started for transformation [01_import_sales]
+2026-10-29 10:10:52.075 - Load Sales.0 - Connected to database [VideoGamesDB] (commit=1000)
+2026-10-29 10:10:52.096 - Read VGSales CSV.0 - Header row skipped in file 'file:///C:/Users/Vitor%20Rezende/Documents/Ipca3ano/ISI/Trabalho1_ETL/transformations\..\data\input\vgsales.csv'
+2026-10-29 10:10:52.265 - Read VGSales CSV.0 - Finished processing (I=16599, O=0, R=0, W=16598, U=0, E=0)
+2026-10-29 10:10:52.270 - Normalize Fields.0 - Finished processing (I=0, O=0, R=16598, W=16598, U=0, E=0)
+2026-10-29 10:10:52.275 - Clean Year Values.0 - Finished processing (I=0, O=0, R=16598, W=16598, U=0, E=0)
+2026-10-29 10:10:52.280 - Convert Data Type.0 - Finished processing (I=0, O=0, R=16598, W=16598, U=0, E=0)
+2026-10-29 10:10:52.641 - Validate Sales Records.0 - Finished processing (I=0, O=0, R=16598, W=16598, U=0, E=0)
+2026-10-29 10:10:54.001 - Calculate Sales Metrics.0 - Finished processing (I=0, O=0, R=16598, W=33196, U=0, E=0)
+2026-10-29 10:10:54.007 - Export Valid Sales.0 - Finished processing (I=0, O=16599, R=16598, W=16598, U=0, E=0)
+2026-10-29 10:10:56.637 - Load Sales.0 - Finished processing (I=0, O=16598, R=16598, W=16598, U=0, E=0)

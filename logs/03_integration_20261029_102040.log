@@ -1,0 +1,10 @@
+2026-10-29 10:20:40.616 - 03 - Integrate Games - Using run configuration [Pentaho local]
+2026-10-29 10:20:40.616 - 03_integrate_games - Dispatching started for transformation [03_integrate_games]
+2026-10-29 10:20:40.627 - Load Merged Games.0 - Connected to database [VideoGamesDB] (commit=1000)
+2026-10-29 10:20:40.924 - Read RAWG Games.0 - Finished reading query, closing connection
+2026-10-29 10:20:41.000 - Read Sales Data.0 - Finished reading query, closing connection
+2026-10-29 10:20:41.002 - Read Sales Data.0 - Finished processing (I=11493, O=0, R=0, W=11493, U=0, E=0)
+2026-10-29 10:20:41.007 - Normalize Sales Name.0 - Finished processing (I=0, O=0, R=11493, W=11493, U=0, E=0)
+2026-10-29 10:20:41.038 - Regex Sales Name.0 - Finished processing (I=0, O=0, R=11493, W=11493, U=0, E=0)
+2026-10-29 10:20:41.139 - Sort Sales Keys.0 - Finished processing (I=0, O=0, R=11493, W=11493, U=0, E=0)
+2026-10-29 10:20:41.298 - Join RAWG and Sales.0 - Finished processing (I=0, O=0, R=11493, W=0, U=0, E=0)
